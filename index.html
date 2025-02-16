@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="最新新闻、热点资讯，尽在新闻网站">
+    <meta property="og:title" content="新闻网站">
+    <meta property="og:description" content="获取最新新闻和资讯">
+    <meta property="og:image" content="news-image.jpg">
+    <meta property="og:type" content="website">
     <title>新闻网站</title>
     <style>
         * {
@@ -13,16 +18,19 @@
         html, body {
             height: 100%;
             width: 100%;
-            overflow: hidden;
+            overflow-x: hidden; /* 允许垂直滚动，但禁止水平滚动 */
+            overflow-y: auto;
         }
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* 让图片填满整个屏幕 */
+            max-width: 100vw;
+            max-height: 100vh;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <img src="news-image.jpg" alt="新闻网站封面">
+    <img src="news-image.jpg" alt="新闻网站封面 - 头条新闻">
 </body>
 </html>
